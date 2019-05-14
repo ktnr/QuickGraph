@@ -99,6 +99,7 @@ namespace QuickGraph.Algorithms.MaximumFlow
         /// <remarks>
         /// Will throw an exception if TEdge is a value type, e.g. <see cref="SEdge{TVertex}"/>.
         /// <seealso href="https://github.com/YaccConstructor/QuickGraph/issues/183#issue-377613647"/>.
+        /// Fix with: EqualityComparer<TEdge>.Default.Equals(reversedEdge, default(TEdge))
         /// </remarks>
         public void AddReversedEdges()
         {
