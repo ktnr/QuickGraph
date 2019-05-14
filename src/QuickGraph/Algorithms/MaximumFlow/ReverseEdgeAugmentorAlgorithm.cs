@@ -100,6 +100,7 @@ namespace QuickGraph.Algorithms.MaximumFlow
         /// Will throw an exception if TEdge is a value type, e.g. <see cref="SEdge{TVertex}"/>.
         /// <seealso href="https://github.com/YaccConstructor/QuickGraph/issues/183#issue-377613647"/>.
         /// Fix with: EqualityComparer<TEdge>.Default.Equals(reversedEdge, default(TEdge))
+        /// For reference: https://stackoverflow.com/questions/65351/null-or-default-comparison-of-generic-argument-in-c-sharp
         /// </remarks>
         public void AddReversedEdges()
         {
